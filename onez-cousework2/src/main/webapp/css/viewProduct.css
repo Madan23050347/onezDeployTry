@@ -1,0 +1,226 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+body {
+  width: 100vw;
+  height: auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  background: #f9f9f9;
+}
+.container {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.image-container {
+  width: 50%;
+  height: 500px;
+  padding: 20px;
+  overflow: hidden;
+}
+.image-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+.image-container img:hover {
+  transform: scale(1.02);
+}
+
+.details-container {
+  padding: 20px;
+  margin: 25px 0px;
+  width: 50%;
+}
+.product-name {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #e65100;
+}
+
+.stock {
+  background: #4caf50;
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Color Options */
+.colors {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.option-label {
+  font-weight: 600;
+  margin-right: 1rem;
+  color: #555;
+}
+
+.color-options {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.btn-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.btn-color.white {
+  background: white;
+  border-color: #808080;
+}
+
+.btn-color.black {
+  background: black;
+  border-color: #808080;
+}
+
+.btn-color.active::after {
+  border-color: #e65100;
+}
+
+/* Product Actions Container */
+
+
+/* Quantity Control */
+/* Product Actions Container */
+.product-actions {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 160px; /* Fixed width for all buttons */
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.quantity-control label {
+    font-weight: 600;
+    color: #333;
+    font-size: 13px;
+    min-width: 60px;
+}
+
+.quantity-control input {
+    width: 36px;
+    text-align: center;
+    padding: 4px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+}
+
+.quantity-control button {
+    width: 22px;
+    height: 22px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Compact Action Buttons */
+.add-to-cart, 
+.buy-now{
+    padding: 6px 8px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.add-to-cart {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.buy-now {
+    background-color: #2196F3;
+    color: white;
+}
+.wishlist-btn {
+    padding: 8px 12px;
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+.wishlist-btn {
+    background-color: #f8f8f8;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+/* Hover Effects */
+.add-to-cart:hover { background-color: #45a049; }
+.buy-now:hover { background-color: #0b7dda; }
+.wishlist-btn:hover { background-color: #e8e8e8; }
+
+
+
+.descripton {
+  border-bottom: 1px solid black;
+}
+.descripton-wrapper {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.descripton-wrapper h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+.descripton-wrapper p {
+  font-size: larger;
+  text-align: justify;
+  line-height: 1.8rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

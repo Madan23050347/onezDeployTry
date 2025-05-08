@@ -1,0 +1,173 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1rem;
+}
+body {
+	width: 100vw;
+  height: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+  color: #333;
+}
+
+.main-content {
+    font-family: Arial, sans-serif;
+	  margin: 0;
+	  padding-top: 50px;
+	  background-color: #f4f4f4;
+	  color: #333;
+	  display: flex;
+}
+
+.main {
+  position: relative;
+  margin: 50px auto;
+  width: 100%;
+  height: 35rem;
+  overflow: hidden;
+  font-family: "Caveat Brush", cursive;
+}
+
+.main .image1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  height: 100%;
+  background-color: black;
+}
+
+.main img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.25;
+  object-fit: cover;
+  border: none;
+  border-radius: 20px;
+}
+
+.imagetext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.main h1 {
+  font-size: 80px;
+}
+.main p {
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  padding: 40px;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.image2 img {
+  width: 100%;
+  height: auto;
+  max-width: 750px;
+  filter: grayscale(50%);
+  opacity: 0;
+  animation: fadeIn 2s ease-in forwards;
+  border-radius: 10px;
+  object-fit: cover;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.image2 {
+  display: flex;
+  flex: 1;
+}
+.history-text {
+  flex: 1;
+  min-width: 200px;
+  text-align: justify;
+  border-right: 5px solid;
+  border-top: 5px solid;
+  border-color: olive;
+  padding: 30px;
+}
+.history-text h2 {
+  margin-bottom: 30px;
+  text-align: left;
+  color: olive;
+  font-size: 40px;
+}
+
+.history-text p {
+  padding: 30px;
+  font-size: 15px;
+}
+.goal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+  padding: 40px;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.image3 img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  filter: grayscale(50%);
+  opacity: 0;
+  animation: fadeIn 4s ease-in forwards;
+  border-radius: 10px;
+  object-fit: cover;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.image3 {
+  display: flex;
+  flex: 1;
+}
+
+.vision-text {
+  flex: 1;
+  min-width: 200px;
+  text-align: justify;
+  border-right: 5px solid;
+  border-top: 5px solid;
+  border-color: olive;
+  padding: 30px;
+}
+
+.vision-text h2 {
+  margin-bottom: 30px;
+  text-align: left;
+  color: olive;
+  font-size: 40px;
+}
+
+.vision-text p {
+  padding: 30px;
+  font-size: 15px;
+}
